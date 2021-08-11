@@ -65,7 +65,7 @@ namespace IdentityServerAspNetIdentity
                 {
                     ClientId = "superset",
                     ClientSecrets = { new Secret("secret".Sha256()) },
-
+                    RequirePkce = false,
                     AllowedGrantTypes = GrantTypes.Code,
                     
                     // where to redirect to after login
